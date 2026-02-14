@@ -2,6 +2,10 @@
 toc: false
 page-layout: full
 listing:
+  - id: news
+    contents:
+    - /news
+    - "!news/index.qmd"
   - id: research
     contents:
     - /research
@@ -38,20 +42,32 @@ listing:
 }
 </style>
 
+
 <div class="image-container">
   <img src='images/campus.jpg' >
-</div>
 
+  <div id="contentframe" style="position:absolute; top: 12%; left: 13%; color: #ffffff; font-family: Rubik; font-size: 36px">
+  Welcome to Intelligent Human-Machine Nexus Lab!
+  </div>
 
-<div id="contentframe" style="position:relative; top: 0px; left: 0px; color: #ffffff; font-family: Rubik; font-size: 30px">
-Welcome to Intelligent Human-Machine Nexus Lab!
-</div>
-
-<div class="text-box">
+  <div id="contentframe" style="position:absolute; top: 40%; left: 13%; color: #ffffff; font-family: Rubik; background-color: #252525;
+  color: #ffffff; /* A dark gray text color */
+  padding: 20px;
+  border-radius: 5px;
+  height: auto;
+  width: 50%;
+  font-size: 18px; padding-bottom: 5px;">
   At the iHuman Lab, we are dedicated to unraveling the complexities of interaction between humans and machines, forging pathways that enhance cognitive abilities, augment decision-making processes, and revolutionize technological integration in society.
 </div>
+</div>
 
-## [Research](research/index.qmd)
+
+<!-- ## [Research](research/index.qmd) -->
+
+::: {#news}
+:::
 
 ::: {#research}
 :::
+
+

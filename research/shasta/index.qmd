@@ -1,7 +1,7 @@
 ---
 title: SHASTA A Simulator for Human and Swarm Team Applications
 date: today
-author: Hemanth Manjunatha
+
 draft: false
 categories:
 - human-robot-interaction

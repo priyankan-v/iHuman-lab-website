@@ -12,6 +12,7 @@ about:
     - text: Website
       url: https://<your-site>.com
 image: ./avatar.jpg
+started: Spring 2026
 ---
 
 ## Education

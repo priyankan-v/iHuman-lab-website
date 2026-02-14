@@ -1,33 +1,53 @@
 ```{=html}
-<!-- <% for (let i = 0; i < Math.min(items.length, 5); i++) {
+<% for (let i = 0; i < items.length; i++) {
     const item = items[i];
 %>
-  <article class="simple-card">
-    <div class="card-text">
-      <h2 class="title">
-        <a href="<%= item.path %>" style="text-decoration: none; color: inherit;">
-          <%= item.title %>
-        </a>
-      </h2>
-      <% if (item.categories && item.categories.length) { %>
-        <div class="categories">
-          <% item.categories.forEach(cat => { %>
-            <span class="category"><%= cat %></span>
-          <% }) %>
-        </div>
-      <% } %>
 
-      <% if (item.description) { %>
-        <p class="description"><%= item.description %></p>
-      <% } %>
+<article class="research-item <%= i % 2 !== 0 ? 'reverse' : '' %>">
+
+  <div class="research-content">
+
+    <h2 class="research-title">
+      <a href="<%= item.path %>">
+        <%= item.title %>
+      </a>
+    </h2>
+
+    <% if (item.categories && item.categories.length) { %>
+      <div class="research-tags">
+        <% item.categories.forEach(cat => { %>
+          <span class="tag"><%= cat %></span>
+        <% }) %>
+      </div>
+    <% } %>
+
+    <% if (item.description) { %>
+      <p class="research-description">
+        <%= item.description %>
+      </p>
+    <% } %>
+
+    <a class="research-link" href="<%= item.path %>">
+      View Project →
+    </a>
+
+  </div>
+
+  <% if (item.image) { %>
+    <div class="research-image">
+      <img
+        src="<%= item.image %>"
+        alt="<%= item['image-alt'] || item.title %>"
+        loading="lazy"
+      />
     </div>
+  <% } %>
 
-    <div class="card-image">
-      <img src="<%= item.image %>" alt="<%= item['image-alt']%>" />
-    </div>
-  </article>
-<% } %> -->
+</article>
 
+<% } %>
+
+```
 
 <style>
 .simple-card {

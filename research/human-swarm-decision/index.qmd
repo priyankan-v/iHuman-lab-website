@@ -1,7 +1,7 @@
 ---
 title: Using Physiological Measurements to Analyze the Tactical Decisions in Human Swarm Teams
 date: today
-author: Hemanth Manjunatha
+
 draft: false
 categories:
 - human-robot-interaction

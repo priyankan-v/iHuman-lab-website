@@ -1,7 +1,7 @@
 ---
 title: Classification of Reaction Time in Simulated Multiple Robot Tele-Exploration
 date: today
-author: Hemanth Manjunatha
+
 draft: false
 categories:
 - human-robot-interaction

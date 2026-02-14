@@ -61,31 +61,52 @@ $heading-font: "Roboto", sans-serif !default;
 }
 
 .image-container {
-    /* Set the container dimensions and positioning context */
-    position: absolute;
-    width: 100vw;
-    height: 53vh;
-    // overflow: hidden; /* This is crucial to prevent the image from spilling out */
-    top: 0px;   /* Positions the box 20px from the top of its parent */
-    right: 0px;
-    // margin-bottom: 40px;
+  position: relative;
+
+  /* Break out of Quarto container */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+  margin-top: -2vw;
+  margin-bottom: 2vw;
 }
 
 .image-container img {
-    /* Make the image fill the container and behave like a background image */
-    width: 100vw;
-    height: 53vh;
-    object-fit: cover;
-    object-position: center; /* Centers the visible part of the image */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* This creates the overlay as a pseudo-element on the image container */
+/* Overlay */
 .image-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 53vh;
-    background-color: rgba(254, 92, 0, 0.5); /* Your desired overlay color and opacity */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(254, 92, 0, 0.5);
 }
+
+.overlay-text {
+  position: absolute;
+  bottom: 60px;
+  left: 8%;
+  z-index: 2;
+  background: rgba(37, 37, 37, 0.85);
+  color: white;
+  padding: 25px 35px;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+
+.card {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+

@@ -45,17 +45,17 @@ listing:
       started: "Started"
     grid-item-align: center
 
-#   - id: alumni
-#     contents: "./alumni/"
-#     type: grid
-#     image-height: 225px
-#     grid-columns: 3
-#     sort: sortby
-#     fields: [image, title, subtitle, started, ended]
-#     field-display-names:
-#       started: "Started"
-#       ended: "Ended"
-#     grid-item-align: center
+  - id: alumni
+    contents: "./alumni/"
+    type: grid
+    image-height: 225px
+    grid-columns: 3
+    sort: sortby
+    fields: [image, title, subtitle, started, ended]
+    field-display-names:
+      started: "Started"
+      ended: "Ended"
+    grid-item-align: center
 toc-location: body
 ---
 

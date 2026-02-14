@@ -1,7 +1,7 @@
 ---
 title: Task Difficulty Prediction in Physical Human Interaction using EEG and Deep Learning
 date: today
-author: Hemanth Manjunatha
+
 draft: false
 categories:
 - human-robot-interaction

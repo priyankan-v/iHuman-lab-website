@@ -15,6 +15,7 @@ about:
           url: None
 image: ./avatar.jpg
 started: Fall 2024
+ended: Fall 2025
 ---
 
 ## Education

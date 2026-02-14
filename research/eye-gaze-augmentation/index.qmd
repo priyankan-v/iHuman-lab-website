@@ -1,7 +1,6 @@
 ---
 title: Selective Eye-gaze Augmentation To Enhance Imitation Learning In Atari Games
 date: today
-author: Hemanth Manjunatha
 draft: false
 categories:
 - human-robot-interaction

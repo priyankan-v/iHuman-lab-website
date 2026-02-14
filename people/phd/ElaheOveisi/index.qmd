@@ -14,7 +14,7 @@ about:
     - text: Website
       url: None
 image: ./avatar.jpeg
-started: August 2023
+started: Fall 2024
 ---
 
 ## Education

@@ -12,6 +12,7 @@ listing:
     - "!research/index.qmd"
     sort: "title"
     type: grid
+    fields: [title, image, date]
     categories: false
     sort-ui: false
     filter-ui: false
@@ -40,6 +41,10 @@ listing:
   margin: 0;
   overflow: hidden
 }
+
+.quarto-post .thumbnail img {
+    width: 45% !important;
+}
 </style>
 
 
@@ -62,10 +67,11 @@ listing:
 </div>
 
 
-<!-- ## [Research](research/index.qmd) -->
-
+## [News](news/index.qmd)
 ::: {#news}
 :::
+
+## [Research](research/index.qmd)
 
 ::: {#research}
 :::

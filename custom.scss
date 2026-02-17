@@ -17,39 +17,43 @@ $font-family-sans-serif: "Rubik", sans-serif !default;
 $heading-font: "Roboto", sans-serif !default;
 
 .navbar .navbar-nav>li>a {
-    line-height: 50px;
-    font-size: 20px;
-    font-weight:bold;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .navbar .navbar-nav>.active>a {
-    color: #252525;
+  color: #252525;
 }
 
 .footer {
-    font-size: 5px;
-    padding: 0%;
+  font-size: 5px;
+  padding: 0%;
 }
 
 .flipH {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
 .text-box {
-  background-color: #252525; /* A light gray background */
-  color: #ffffff; /* A dark gray text color */
+  background-color: #252525;
+  /* A light gray background */
+  color: #ffffff;
+  /* A dark gray text color */
   padding: 20px;
   border-radius: 0px;
-  width: 710px; /* The box will be 50% of its parent's width */
+  width: 710px;
+  /* The box will be 50% of its parent's width */
   height: auto;
   font-family: Rubik;
   position: relative;
-  top: 0px;   /* Positions the box 20px from the top of its parent */
+  top: 0px;
+  /* Positions the box 20px from the top of its parent */
   right: 0px;
   padding-bottom: 5px;
   margin-bottom: 100px;
@@ -57,7 +61,8 @@ $heading-font: "Roboto", sans-serif !default;
 }
 
 .primary {
-        color:#Fe5c00; /* Or any other color, like #007bff or rgb(0, 123, 255) */
+  color: #Fe5c00;
+  /* Or any other color, like #007bff or rgb(0, 123, 255) */
 }
 
 .image-container {
@@ -109,4 +114,33 @@ $heading-font: "Roboto", sans-serif !default;
   border-bottom-right-radius: 10px;
 }
 
+.publication-card {
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 0.4em 0.8em;
+  /* smaller padding inside the card */
+  margin-bottom: 1rem;
+  /* keeps large space between cards */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
 
+.publication-badge {
+  display: inline-block;
+  background-color: #Fe5c00;
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 0.15em 0.5em;
+  border-radius: 4px;
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+
+.publication-card p {
+  padding-left: 0;
+  text-indent: 0;
+  line-height: 1.4;
+  margin-bottom: 0;
+  /* no extra margin inside card */
+}

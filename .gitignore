@@ -2,4 +2,6 @@
 
 **/.DS_Store
 
-_site/ 
+_site/
+
+**/*.quarto_ipynb

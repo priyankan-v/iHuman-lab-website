@@ -1,6 +1,7 @@
 ---
 listing:
   contents: ./
+  page-size: 6
   # template: ../assets/listing.ejs
   type: grid
   feed: true
@@ -8,6 +9,7 @@ listing:
   grid-item-align: center
   fields: [title, image, date]
   max-items: 6
+
 toc-location: body
 page-layout: full
 ---

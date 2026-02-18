@@ -1,6 +1,6 @@
 ---
 title: Transfer Learning of Motor Difficulty Classification in Physical Human-Robot Interaction Using Electromyography
-date: today
+date: "2022"
 
 draft: false
 image: 'cover.jpg'

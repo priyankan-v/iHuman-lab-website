@@ -3,11 +3,11 @@ project:
 
 website:
   title: 'iHuman Lab'
-  favicon: images/logo_transparent.png
+  favicon: images/logo.png
   page-footer: |
     ![](/images/logo_text.png){fig-align="center" width=65%}
   navbar:
-    logo: images/logo_transparent.png
+    logo: images/logo.png
     right:
       - icon: github
         href: https://github.com/iHuman-Lab
@@ -24,8 +24,10 @@ website:
         text: People
       - href: news
         text: News
+      # - href: software
+      #   text: Software
       - href: contact
-        text: Contact
+        text: Join
       # - href: blogs
       #   text: Blogs
 

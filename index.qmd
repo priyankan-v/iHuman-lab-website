@@ -10,52 +10,64 @@ listing:
     contents:
     - /research
     - "!research/index.qmd"
-    sort: "title"
+    sort: "date desc"
     type: grid
-    fields: [title, image, date]
+    fields: [title, image]
     categories: false
-    sort-ui: false
     filter-ui: false
-    max-items: 3
+    max-items: 6
     feed: false
+    page-size: 3
 ---
 
 <style>
-.card-text {
-  flex-direction: column;
-  justify-content: left;
-  background: transparent;
+
+
+.card {
+  boarder: none;
+  position: relative;
+  background: $gray
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 
 .card-title {
-  margin: 0 0 0.1rem;
-  font-size: 1.25rem;
-  color: #215177;
+  position: relative;
+  color: #252525;
+  font-family: Rubik, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
   text-align: center;
-  font-weight: bold;
-}
-
-.description {
-  color: #374151;
-  line-height: 1.4;
-  margin: 0;
-  overflow: hidden
+  z-index: 10;             /* ensures it’s in front of the image */
 }
 
 .quarto-post .thumbnail img {
     width: 45% !important;
 }
+
+.listing-date {
+  font-size: 14pt;
+}
+
+.navbar .nav-link i {
+  font-size: 1.4rem;  /* try 1.2rem–1.8rem */
+}
+
 </style>
 
 
 <div class="image-container">
   <img src='images/campus.jpg' >
 
-  <div id="contentframe" style="position:absolute; top: 12%; left: 13%; color: #ffffff; font-family: Rubik; font-size: 36px">
+  <div id="contentframe" style="position:absolute; top: 5%; left: 13%; color: #ffffff; font-family: Rubik; font-size: 36px">
   Welcome to Intelligent Human-Machine Nexus Lab!
   </div>
 
-  <div id="contentframe" style="position:absolute; top: 40%; left: 13%; color: #ffffff; font-family: Rubik; background-color: #252525;
+  <div id="contentframe" style="position:absolute; top: 35%; left: 13%; color: #ffffff; font-family: Rubik; background-color: #252525;
   color: #ffffff; /* A dark gray text color */
   padding: 20px;
   border-radius: 5px;
@@ -67,13 +79,16 @@ listing:
 </div>
 
 
+
 ## [News](news/index.qmd)
 ::: {#news}
 :::
 
-## [Research](research/index.qmd)
 
+## [Research](research/index.qmd)
 ::: {#research}
 :::
+
+
 
 

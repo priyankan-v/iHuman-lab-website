@@ -1,12 +1,12 @@
 ---
 title: SHASTA A Simulator for Human and Swarm Team Applications
-date: today
+date: "2024"
 
 draft: false
 categories:
 - human-robot-interaction
 - python
-image: 'eeg-eye-tracking.jpg'
+image: 'cover.jpg'
 layout: single
 links:
 - icon: github

@@ -1,6 +1,6 @@
 ---
 title: Classification of Reaction Time in Simulated Multiple Robot Tele-Exploration
-date: today
+date: "2022"
 
 draft: false
 categories:

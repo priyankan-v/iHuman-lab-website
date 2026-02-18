@@ -1,6 +1,6 @@
 ---
 title: Task Difficulty Prediction in Physical Human Interaction using EEG and Deep Learning
-date: today
+date: "2021"
 
 draft: false
 categories:

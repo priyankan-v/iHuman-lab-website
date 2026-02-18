@@ -1,6 +1,6 @@
 ---
-title: Extracting Interpretable EEG Features from a Deep Learning Model to Assess the Quality of Human-Robot Co-manipulation
-date: today
+title: Extracting Interpretable EEG Features from a Deep Learning Model to Assess the Quality of HRI
+date: "2021"
 draft: false
 categories:
 - human-robot-interaction

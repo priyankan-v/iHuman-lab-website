@@ -4,8 +4,12 @@
 // $fg: #2b2121 !default;
 // $bg: #ffffff !default;
 $navbar-hl: #252525;
-$navbar-fg: #Fe5c00;
-$link-color: #Fe5c00;
+$navbar-fg: #EC672C;
+$link-color: #EC672C;
+$gray: #dddddd;
+$primary-color: #EC672C;
+$pagination-active-bg: $primary-color;
+$pagination-active-border-color: $primary-color;
 
 /*-- scss:defaults --*/
 /*-- scss:rules --*/
@@ -16,15 +20,21 @@ $link-color: #Fe5c00;
 $font-family-sans-serif: "Rubik", sans-serif !default;
 $heading-font: "Roboto", sans-serif !default;
 
-.navbar .navbar-nav>li>a {
-  line-height: 50px;
+.navbar .navbar-nav > li > a {
+  line-height: 40px;
   font-size: 20px;
   font-weight: bold;
+  color: #FFFFFF !important;
 }
 
-.navbar .navbar-nav>.active>a {
-  color: #252525;
+.navbar .navbar-nav > li > a:hover {
+  color: #EC672C !important;  // your orange
 }
+
+.navbar {
+  background-color: $navbar-hl !important;
+}
+
 
 .footer {
   font-size: 5px;
@@ -61,23 +71,21 @@ $heading-font: "Roboto", sans-serif !default;
 }
 
 .primary {
-  color: #Fe5c00;
+  color: $primary-color;
   /* Or any other color, like #007bff or rgb(0, 123, 255) */
 }
 
 .image-container {
   position: relative;
-
   /* Break out of Quarto container */
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
   overflow: hidden;
-  margin-top: -2vw;
+  margin-top: -2.5vw;
   margin-bottom: 2vw;
 }
 
@@ -108,15 +116,16 @@ $heading-font: "Roboto", sans-serif !default;
   max-width: 600px;
 }
 
-
 .card {
+  border: none !important;
+  background-color: $gray;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .publication-card {
   background: #f9f9f9;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 0.4em 0.8em;
   /* smaller padding inside the card */
   margin-bottom: 1rem;
@@ -143,4 +152,13 @@ $heading-font: "Roboto", sans-serif !default;
   line-height: 1.4;
   margin-bottom: 0;
   /* no extra margin inside card */
+}
+
+.navbar-brand:hover {
+  color: #ffffff !important;   /* replace with your color */
+}
+
+.navbar .nav-link i,
+.navbar .navbar-brand i {
+  font-size: 30px;   // adjust size here
 }

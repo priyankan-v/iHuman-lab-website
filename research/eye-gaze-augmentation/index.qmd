@@ -1,6 +1,6 @@
 ---
 title: Selective Eye-gaze Augmentation To Enhance Imitation Learning In Atari Games
-date: today
+date: "2023"
 draft: false
 categories:
 - human-robot-interaction

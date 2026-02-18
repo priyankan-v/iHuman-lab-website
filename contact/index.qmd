@@ -1,21 +1,76 @@
 ---
-pagetitle: "Contact | iHuman Lab"
+pagetitle: "Join | iHuman Lab"
 toc: false
 email-obfuscation: javascript
 ---
+# Join the iHuman Lab
+We are always looking for motivated, creative, and driven students to join the iHuman Lab at Oklahoma State University. Our research sits at the intersection of human-centered computing, AI, and robotics. We value curiosity, collaboration, and initiative.
 
-## Visit Us
+<div class="text-box" style="margin: 40px auto; text-align: center; max-width: 900px; border-radius: 5px;">
+  <h2 style="margin-top: 0; font-size: 24px;">
+    We Are Recruiting New Lab Members!
+  </h2>
+  <p style="font-size: 20px; margin-bottom: 10px;">
+    The iHuman Lab is actively seeking
+    <strong>MS students, and Undergraduate Researchers</strong>
+    to join our team.
+  </p>
+  <p style="font-size: 18px; margin-bottom: 0;">
+    If you are passionate about <span class="primary">Human-Centered AI</span>,
+    <span class="primary">Interactive Systems</span>, and
+    <span class="primary">Robotics</span>,
+    we would love to hear from you.
+  </p>
+</div>
 
-The iHuman Lab is located in Oklahoma State University
+
+## 🔬 Research Opportunities
+
+We typically recruit: **PhD students**, **MS students**, and **Undergraduate researchers** students in:
+
+* Mechanical and Aerospace Engineering,
+* Electrical & Computer Science Engineering
+* Human-Computer Interaction
+* AI / Machine Learning
+* Related disciplines
+
+## 🎯 What We Look For
+
+Successful lab members typically demonstrate:
+
+* Strong programming skills
+* Research curiosity and initiative
+* Interest in human-centered AI
+* Solid communication and teamwork skills
+
+Prior research experience is helpful but not required.
+
+## 📌 How to Apply
+
+If you are interested in joining the lab:
+
+1. Prepare your CV
+2. Include an unofficial transcript
+3. Write a short research statement describing:
+   * Your research interests
+   * Why you want to join the iHuman Lab
+   * Your long-term goals
+
+## 📧 Contact
+
+Please email the following materials with the subject line:
+
+> **Prospective Student – [Your Name]** to [ihuman.research.lab@gmail.com](ihuman.research.lab@gmail.com)
+
+
+Alternatively, you may contact us directly through the School of Mechanical and Aerospace Engineering at Oklahoma State University.
+
+## 📍 Location
+
+The iHuman Lab is located at Oklahoma State University.
 
 ```{=html}
 <p align=center>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218.51323556589713!2d-97.06880727894367!3d36.12393715201877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b10a3f04255555%3A0xd0db76df61ef7e4a!2sOklahoma%20State%20University%20School%20of%20Electrical%20Computer%20Engineering!5e0!3m2!1sen!2sus!4v1721798720952!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <p>
-```
-
-## Email Us
-
-```{=html}
-<script src="https://cdn.form.io/formiojs/formio.embed.js?src=https://ejlffjjksoybevj.form.io/affcomlabcontactform&libs=true"></script>
 ```

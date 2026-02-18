@@ -1,6 +1,6 @@
 ---
 title: Using Physiological Measurements to Analyze the Tactical Decisions in Human Swarm Teams
-date: today
+date: "2021"
 
 draft: false
 categories:

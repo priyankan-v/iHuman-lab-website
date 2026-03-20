@@ -6,4 +6,12 @@ filters:
   - ./publication.lua
 ---
 
-
+```{=html}
+<div class="page-banner">
+  <img src="../images/campus.jpg" alt="Campus">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Peer-reviewed research</div>
+    <div class="hero-title-top">Our <span class="hero-title-accent">Publications</span></div>
+  </div>
+</div>
+```

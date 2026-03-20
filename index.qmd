@@ -1,94 +1,43 @@
 ---
 toc: false
 page-layout: full
-listing:
-  - id: news
-    contents:
-    - /news
-    - "!news/index.qmd"
-  - id: research
-    contents:
-    - /research
-    - "!research/index.qmd"
-    sort: "date desc"
-    type: grid
-    fields: [title, image]
-    categories: false
-    filter-ui: false
-    max-items: 6
-    feed: false
-    page-size: 3
 ---
 
-<style>
-
-
-.card {
-  boarder: none;
-  position: relative;
-  background: $gray
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
-}
-
-.card-title {
-  position: relative;
-  color: #252525;
-  font-family: Rubik, sans-serif;
-  font-size: 1rem;
-  line-height: 1.2;
-  text-align: center;
-  z-index: 10;             /* ensures it’s in front of the image */
-}
-
-.quarto-post .thumbnail img {
-    width: 45% !important;
-}
-
-.listing-date {
-  font-size: 14pt;
-}
-
-.navbar .nav-link i {
-  font-size: 1.4rem;  /* try 1.2rem–1.8rem */
-}
-
-</style>
-
-
+```{=html}
 <div class="image-container">
-  <img src='images/campus.jpg' >
-
-  <div id="contentframe" style="position:absolute; top: 5%; left: 13%; color: #ffffff; font-family: Rubik; font-size: 36px">
-  Welcome to Intelligent Human-Machine Nexus Lab!
+  <img src='images/campus.jpg' alt="OSU Campus">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Welcome to the</div>
+    <div class="hero-title-top">iHuman <span class="hero-title-accent">Lab</span></div>
   </div>
-
-  <div id="contentframe" style="position:absolute; top: 35%; left: 13%; color: #ffffff; font-family: Rubik; background-color: #252525;
-  color: #ffffff; /* A dark gray text color */
-  padding: 20px;
-  border-radius: 5px;
-  height: auto;
-  width: 50%;
-  font-size: 18px; padding-bottom: 5px;">
-  At the iHuman Lab, we are dedicated to unraveling the complexities of interaction between humans and machines, forging pathways that enhance cognitive abilities, augment decision-making processes, and revolutionize technological integration in society.
-</div>
 </div>
 
+<div class="stats-strip">
+  <a class="stat-item" href="publications/index.html">
+    <div class="stat-number">30<span class="stat-plus">+</span></div>
+    <div class="stat-label">Publications</div>
+  </a>
+  <a class="stat-item" href="people/index.html">
+    <div class="stat-number">10<span class="stat-plus">+</span></div>
+    <div class="stat-label">Team Members</div>
+  </a>
+  <a class="stat-item" href="research/index.html">
+    <div class="stat-number">4</div>
+    <div class="stat-label">Research Areas</div>
+  </a>
+  <a class="stat-item" href="research/index.html">
+    <div class="stat-number">6<span class="stat-plus">+</span></div>
+    <div class="stat-label">Active Projects</div>
+  </a>
+</div>
 
-
-## [News](news/index.qmd)
-::: {#news}
-:::
-
-
-## [Research](research/index.qmd)
-::: {#research}
-:::
-
-
-
-
+<div class="home-about">
+  <div class="home-about-eyebrow">Who we are</div>
+  <div class="home-about-heading">Building the future of <span class="hero-title-accent">Human-Machine Interaction</span></div>
+  <p class="home-about-body">We unravel the complexities of human-machine interaction — enhancing cognition, augmenting decision-making, and revolutionizing how people and technology work together. At Oklahoma State University, our work spans brain-computer interfaces, human-robot interaction, AI-assisted decision-making, and cognitive augmentation, with a focus on making technology safer, smarter, and more human.</p>
+  <div class="home-cta-row">
+    <a class="home-cta" href="people/index.html">Meet the Team</a>
+    <a class="home-cta" href="research/index.html">See Our Research</a>
+  </div>
+</div>
+```

@@ -5,51 +5,20 @@ listing:
   type: grid
   feed: true
   sort: "date desc"
-  grid-item-align: center
   fields: [title, image]
+  categories: false
+  filter-ui: false
   max-items: 36
 toc-location: body
 page-layout: full
 ---
 
-
-<div class="image-container">
+```{=html}
+<div class="page-banner">
   <img src="../images/campus_1.jpg" alt="Campus">
-
-  <div id="contentframe" style="position:absolute; top: 40%; left: 13%; color: #ffffff; font-family: Rubik; background-color: #252525;
-  color: #ffffff; /* A dark gray text color */
-  padding: 20px;
-  border-radius: 5px;
-  height: auto;
-  font-family: Rubik;; font-size: 30px; padding-bottom: 5px;">
-  Research @ iHuman Lab
+  <div class="hero-content">
+    <div class="hero-eyebrow">Explore our work</div>
+    <div class="hero-title-top">Research <span class="hero-title-accent">@iHuman</span></div>
+  </div>
 </div>
-</div>
-
-<style>
-
-.card {
-  boarder: none;
-  position: relative;
-  background: $gray
-  min-height: 300px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
-}
-
-.card-title {
-  position: relative;
-  color: #252525;
-  font-family: Rubik, sans-serif;
-  font-size: 1rem;
-  line-height: 1.2;
-  text-align: center;
-}
-
-</style>
-
+```

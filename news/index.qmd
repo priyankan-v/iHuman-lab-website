@@ -1,23 +1,21 @@
 ---
 listing:
-  contents: ./
-  type: default
-  feed: true
-  grid-item-align: center
+  contents:
+    - ./
+  template: ../assets/news.ejs
+  fields: [image, title, description, date]
+  sort: "date desc"
   max-items: 10
 toc-location: body
 page-layout: full
 ---
 
-<style>
-
-
-.quarto-post .thumbnail img {
-    width: 45% !important;
-}
-
-.listing-date {
-  font-size: 14pt;
-}
-</style>
-
+```{=html}
+<div class="page-banner">
+  <img src="../images/campus_1.jpg" alt="Campus">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Updates from the lab</div>
+    <div class="hero-title-top">Latest <span class="hero-title-accent">News</span></div>
+  </div>
+</div>
+```

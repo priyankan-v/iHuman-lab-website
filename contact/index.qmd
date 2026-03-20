@@ -1,9 +1,20 @@
 ---
 pagetitle: "Join | iHuman Lab"
 toc: false
+page-layout: full
 email-obfuscation: javascript
 ---
-# Join the iHuman Lab
+
+```{=html}
+<div class="page-banner">
+  <img src="../images/campus_1.jpg" alt="Campus">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Become part of the lab</div>
+    <div class="hero-title-top">Join <span class="hero-title-accent">iHuman</span></div>
+  </div>
+</div>
+```
+
 We are always looking for motivated, creative, and driven students to join the iHuman Lab at Oklahoma State University. Our research sits at the intersection of human-centered computing, AI, and robotics. We value curiosity, collaboration, and initiative.
 
 <div class="text-box" style="margin: 40px auto; text-align: center; max-width: 900px; border-radius: 5px;">
@@ -23,18 +34,17 @@ We are always looking for motivated, creative, and driven students to join the i
   </p>
 </div>
 
-
-## 🔬 Research Opportunities
+## Research Opportunities
 
 We typically recruit: **PhD students**, **MS students**, and **Undergraduate researchers** students in:
 
-* Mechanical and Aerospace Engineering,
+* Mechanical and Aerospace Engineering
 * Electrical & Computer Science Engineering
 * Human-Computer Interaction
 * AI / Machine Learning
 * Related disciplines
 
-## 🎯 What We Look For
+## What We Look For
 
 Successful lab members typically demonstrate:
 
@@ -45,7 +55,7 @@ Successful lab members typically demonstrate:
 
 Prior research experience is helpful but not required.
 
-## 📌 How to Apply
+## How to Apply
 
 If you are interested in joining the lab:
 
@@ -56,16 +66,15 @@ If you are interested in joining the lab:
    * Why you want to join the iHuman Lab
    * Your long-term goals
 
-## 📧 Contact
+## Contact
 
 Please email the following materials with the subject line:
 
 > **Prospective Student – [Your Name]** to [ihuman.research.lab@gmail.com](ihuman.research.lab@gmail.com)
 
-
 Alternatively, you may contact us directly through the School of Mechanical and Aerospace Engineering at Oklahoma State University.
 
-## 📍 Location
+## Location
 
 The iHuman Lab is located at Oklahoma State University.
 

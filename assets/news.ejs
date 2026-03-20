@@ -1,0 +1,35 @@
+<div class="news-magazine">
+<% const newsItems = items.filter(item => item.title && item.image); %>
+<% if (newsItems.length > 0) { %>
+<% const featured = newsItems[0]; %>
+<% const fd = featured.date ? new Date(featured.date).toLocaleDateString('en-US', {month:'long', day:'numeric', year:'numeric'}) : ''; %>
+<div class="news-featured">
+<a class="news-stretched-link" href="<%= featured.path %>"></a>
+<div class="news-featured-image"><% if (featured.image) { %><img src="<%= featured.image %>" alt="<%= featured.title %>" class="news-featured-img" /><% } %></div>
+<div class="news-featured-content">
+<span class="news-latest-badge">Latest</span>
+<div class="news-featured-date"><%= fd %></div>
+<div class="news-featured-title"><%= featured.title %></div>
+<div class="news-featured-desc"><%= featured.description %></div>
+<span class="news-read-more">Read more →</span>
+</div>
+</div>
+<% } %>
+<% if (newsItems.length > 1) { %>
+<div class="news-cards-row">
+<% for (let i = 1; i < newsItems.length; i++) { %>
+<% const item = newsItems[i]; %>
+<% const d = item.date ? new Date(item.date).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}) : ''; %>
+<div class="news-card">
+<a class="news-stretched-link" href="<%= item.path %>"></a>
+<div class="news-card-img-wrap"><% if (item.image) { %><img src="<%= item.image %>" alt="<%= item.title %>" class="news-card-img" /><% } %></div>
+<div class="news-card-body">
+<div class="news-card-date"><%= d %></div>
+<div class="news-card-title"><%= item.title %></div>
+<div class="news-card-desc"><%= item.description %></div>
+</div>
+</div>
+<% } %>
+</div>
+<% } %>
+</div>

@@ -1,94 +1,75 @@
 ---
 pagetitle: "People | iHuman Lab"
 toc: false
+page-layout: full
 listing:
   - id: pi
     contents: "./pi/"
-    type: grid
-    image-height: 200px
-    grid-columns: 3
+    template: ../assets/people.ejs
     fields: [image, title, subtitle]
-    grid-item-align: center
     sort: sortby
-    field-display-names:
-      started: "Started"
   - id: phd
     contents: "./phd/"
-    type: grid
-    image-height: 200px
-    grid-columns: 3
+    template: ../assets/people.ejs
+    fields: [image, title, subtitle]
     sort: sortby
-    fields: [image, title, subtitle, started]
-    field-display-names:
-      started: "Started"
-    grid-item-align: center
-
   - id: masters
     contents: "./master/"
-    type: grid
-    image-height: 225px
-    grid-columns: 3
+    template: ../assets/people.ejs
+    fields: [image, title, subtitle]
     sort: sortby
-    fields: [image, title, subtitle, started]
-    field-display-names:
-      started: "Started"
-    grid-item-align: center
-
   - id: undergraduate
     contents: "./undergraduate/"
-    type: grid
-    image-height: 200px
-    grid-columns: 3
+    template: ../assets/people.ejs
+    fields: [image, title, subtitle]
     sort: sortby
-    fields: [image, title, subtitle, started]
-    field-display-names:
-      started: "Started"
-    grid-item-align: center
-
   - id: alumni
     contents: "./alumni/"
-    type: grid
-    image-height: 225px
-    grid-columns: 3
+    template: ../assets/people.ejs
+    fields: [image, title, subtitle]
     sort: sortby
-    fields: [image, title, subtitle, started, ended]
-    field-display-names:
-      started: "Started"
-      ended: "Ended"
-    grid-item-align: center
-toc-location: body
 ---
 
 ```{=html}
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">People</li>
-  </ol>
-</nav>
+<div class="page-banner">
+  <img src="../images/campus.jpg" alt="Campus">
+  <div class="hero-content">
+    <div class="hero-eyebrow">The people behind the research</div>
+    <div class="hero-title-top">Meet the <span class="hero-title-accent">Team</span></div>
+  </div>
+</div>
 ```
 
-## PI
+:::: {.people-row}
 
+::: {.people-col}
+### PI
 :::{#pi}
 :::
+:::
 
-## PhD
-
+::: {.people-col}
+### PhD
 :::{#phd}
 :::
+:::
 
-## Masters
-
+::: {.people-col}
+### Masters
 :::{#masters}
 :::
+:::
 
-## Undergraduate
-
+::: {.people-col}
+### Undergraduate
 :::{#undergraduate}
 :::
+:::
 
-## Alumni
-
+::: {.people-col}
+### Alumni
 :::{#alumni}
 :::
+:::
+
+::::

@@ -2,11 +2,11 @@
 title: Graduate Student Receives ASME IDETC Travel Award
 date: December 31, 2025
 draft: false
-image: "IMG_0443.HEIC"
+image: "IMG_0443.jpg"
 description: Elahe Oveisi, a Ph.D. student in the iHuman Lab at Oklahoma State University, received a Graduate Poster Travel Award at the ASME International Design Engineering Technical Conferences (IDETC), where she presented her research on AI-driven human factor analysis in safety-critical aerospace systems.
 ---
 
-![](IMG_0443.HEIC){fig-align=center}
+![](IMG_0443.jpg){fig-align=center}
 
 ## iHuman Lab Ph.D. Student Receives ASME IDETC Travel Award
 

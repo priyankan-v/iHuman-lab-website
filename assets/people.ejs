@@ -1,0 +1,11 @@
+<div class="people-grid">
+<% for (const item of items) { %>
+<a class="person-card" href="<%= item.path %>">
+<div class="person-photo-wrap"><% if (item.image) { %><img src="<%= item.image %>" alt="<%= item.title %>" loading="lazy" class="person-photo" /><% } %></div>
+<div class="person-info">
+<div class="person-name"><%= item.title %></div>
+<% if (item.subtitle) { %><div class="person-role"><%= item.subtitle %></div><% } %>
+</div>
+</a>
+<% } %>
+</div>

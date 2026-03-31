@@ -1,0 +1,11 @@
+---
+title: "irobot"
+date: "February 16, 2026"
+draft: false
+image: "cover.png"
+description: "The central software ecosystem for the iHuman Lab. A modular, high-momentum framework for Intelligent Human-Machine interaction built on ROS 2 and Sugarcoat."
+github: "https://github.com/iHuman-Lab/irobot"
+repo_languages:
+  - "Python"
+
+---

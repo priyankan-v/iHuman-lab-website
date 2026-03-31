@@ -1,0 +1,11 @@
+---
+title: "eye-world"
+date: "March 16, 2026"
+draft: false
+image: "cover.png"
+description: "Implementation of world models in Atari using eye-tracking"
+github: "https://github.com/iHuman-Lab/eye-world"
+repo_languages:
+  - "Python"
+
+---

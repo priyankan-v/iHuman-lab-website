@@ -1,0 +1,36 @@
+---
+pagetitle: "Gallery | iHuman Lab"
+toc: false
+page-layout: full
+lightbox: true
+---
+
+```{=html}
+<div class="page-banner">
+  <img src="../images/campus/campus_1.jpg" alt="Campus">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Life at the lab</div>
+    <div class="hero-title-top">Gallery</div>
+  </div>
+</div>
+
+<div class="gallery-grid">
+  <!-- GALLERY_START -->
+  <a href="../images/work/377A0851.jpg" class="gallery-item lightbox" data-gallery="lab-gallery">
+    <img src="../images/work/377A0851.jpg" alt="iHuman Lab" loading="lazy" />
+  </a>
+  <a href="../images/work/377A0883.jpg" class="gallery-item lightbox" data-gallery="lab-gallery">
+    <img src="../images/work/377A0883.jpg" alt="iHuman Lab" loading="lazy" />
+  </a>
+  <a href="../images/work/377A0891.jpg" class="gallery-item lightbox" data-gallery="lab-gallery">
+    <img src="../images/work/377A0891.jpg" alt="iHuman Lab" loading="lazy" />
+  </a>
+  <a href="../images/work/377A0907.jpg" class="gallery-item lightbox" data-gallery="lab-gallery">
+    <img src="../images/work/377A0907.jpg" alt="iHuman Lab" loading="lazy" />
+  </a>
+  <a href="../images/work/377A0918.jpg" class="gallery-item lightbox" data-gallery="lab-gallery">
+    <img src="../images/work/377A0918.jpg" alt="iHuman Lab" loading="lazy" />
+  </a>
+  <!-- GALLERY_END -->
+</div>
+```

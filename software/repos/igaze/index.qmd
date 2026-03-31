@@ -1,0 +1,9 @@
+---
+title: "igaze"
+date: "November 13, 2024"
+draft: false
+image: "cover.png"
+description: "A python package implementing various features extraction method from eye tracking"
+github: "https://github.com/iHuman-Lab/igaze"
+
+---

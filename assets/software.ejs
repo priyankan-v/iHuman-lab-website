@@ -1,0 +1,21 @@
+<div class="software-grid">
+<% items.filter(function(item){ return item.title; }).forEach(function(item){ %>
+<div class="software-card">
+<a class="software-stretched-link" href="<%= item.github || item.path %>"<% if (item.github) { %> target="_blank" rel="noopener"<% } %>></a>
+<div class="software-card-img-wrap">
+<% if (item.image) { %>
+<img src="<%= item.image %>" alt="<%= item.title %>" class="software-card-img" loading="lazy" />
+<% } else { %>
+<div class="software-card-img-placeholder"></div>
+<% } %>
+</div>
+<div class="software-card-body">
+<div class="software-card-desc"><%= item.description || '' %></div>
+<div class="software-card-footer">
+<span class="software-card-arrow">View on GitHub</span>
+<% if (item.repo_languages && item.repo_languages.length) { item.repo_languages.forEach(function(lang){ %><span class="software-lang-badge"><%= lang %></span><% }); } %>
+</div>
+</div>
+</div>
+<% }); %>
+</div>

@@ -1,0 +1,9 @@
+---
+title: "llm-hfacs"
+date: "January 26, 2026"
+draft: false
+image: "cover.png"
+description: "Using Large Language Models to automatically analyze aviation accident reports and classify them according to the Human Factors Analysis and Classification System (HFACS)."
+github: "https://github.com/iHuman-Lab/llm-hfacs"
+
+---

@@ -32,7 +32,7 @@ listing:
 
 ```{=html}
 <div class="page-banner">
-  <img src="../images/campus.jpg" alt="Campus">
+  <img src="../images/campus/campus.jpg" alt="Campus">
   <div class="hero-content">
     <div class="hero-eyebrow">The people behind the research</div>
     <div class="hero-title-top">Meet the <span class="hero-title-accent">Team</span></div>

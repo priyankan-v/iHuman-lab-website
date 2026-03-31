@@ -1,23 +1,12 @@
 ---
 listing:
-  contents: ./
-  type: default
-  feed: true
-  grid-item-align: center
-  max-items: 10
-toc-location: body
+  contents:
+    - "./"
+  template: ../assets/software.ejs
+  fields: [image, title, description, github, repo_languages, path]
+  sort: "date desc"
+  max-items: 50
+toc: false
 page-layout: full
 ---
-
-<style>
-
-
-.quarto-post .thumbnail img {
-    width: 45% !important;
-}
-
-.listing-date {
-  font-size: 14pt;
-}
-</style>
 

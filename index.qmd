@@ -5,7 +5,7 @@ page-layout: full
 
 ```{=html}
 <div class="image-container">
-  <img src='images/campus.jpg' alt="OSU Campus">
+  <img src='images/campus/campus.jpg' alt="OSU Campus">
   <div class="hero-content">
     <div class="hero-eyebrow">Welcome to the</div>
     <div class="hero-title-top">iHuman <span class="hero-title-accent">Lab</span></div>
@@ -32,6 +32,8 @@ page-layout: full
 </div>
 
 <div class="home-about">
+<div class="home-about-inner">
+<div class="home-about-text">
   <div class="home-about-eyebrow">Who we are</div>
   <div class="home-about-heading">Building the future of <span class="hero-title-accent">Human-Machine Interaction</span></div>
   <p class="home-about-body">We unravel the complexities of human-machine interaction — enhancing cognition, augmenting decision-making, and revolutionizing how people and technology work together. At Oklahoma State University, our work spans brain-computer interfaces, human-robot interaction, AI-assisted decision-making, and cognitive augmentation, with a focus on making technology safer, smarter, and more human.</p>
@@ -39,5 +41,26 @@ page-layout: full
     <a class="home-cta" href="people/index.html">Meet the Team</a>
     <a class="home-cta" href="research/index.html">See Our Research</a>
   </div>
+</div>
+<div class="home-about-photos-wrap">
+<div id="home-slideshow" class="home-about-photos"></div>
+<script>
+/* SLIDESHOW_START */
+["377A0851.jpg", "377A0883.jpg", "377A0891.jpg", "377A0907.jpg", "377A0918.jpg"]
+/* SLIDESHOW_END */
+.forEach(function(f, i) {
+  var img = document.createElement("img");
+  img.className = "slideshow-img";
+  img.src = "images/work/" + f;
+  img.alt = "iHuman Lab";
+  img.style.animationDelay = (i * 4) + "s";
+  document.getElementById("home-slideshow").appendChild(img);
+});
+</script>
+<div class="home-cta-row" style="margin-top: 1rem;">
+  <a class="home-cta" href="gallery/index.html">View Gallery</a>
+</div>
+</div>
+</div>
 </div>
 ```

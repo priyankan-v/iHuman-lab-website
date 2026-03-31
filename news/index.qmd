@@ -12,7 +12,7 @@ page-layout: full
 
 ```{=html}
 <div class="page-banner">
-  <img src="../images/campus_1.jpg" alt="Campus">
+  <img src="../images/campus/campus_1.jpg" alt="Campus">
   <div class="hero-content">
     <div class="hero-eyebrow">Updates from the lab</div>
     <div class="hero-title-top">Latest <span class="hero-title-accent">News</span></div>

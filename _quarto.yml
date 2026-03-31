@@ -1,13 +1,16 @@
 project:
   type: website
+  pre-render:
+    - python scripts/fetch_github_repos.py
+    - python scripts/update_gallery.py
 
 website:
   title: 'iHuman Lab'
-  favicon: images/logo.png
+  favicon: images/logos/logo.png
   page-footer: |
-    ![](/images/logo_text.png){fig-align="center" width=65%}
+    ![](/images/logos/logo_text.png){fig-align="center" width=65%}
   navbar:
-    logo: images/logo.png
+    logo: images/logos/logo.png
     right:
       - icon: github
         href: https://github.com/iHuman-Lab
@@ -24,8 +27,10 @@ website:
         text: People
       - href: news
         text: News
-      # - href: software
-      #   text: Software
+      - href: software
+        text: Software
+      - href: gallery
+        text: Gallery
       - href: contact
         text: Join
       # - href: blogs

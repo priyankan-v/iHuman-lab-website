@@ -1,0 +1,29 @@
+---
+title: "Closing the Human-AI Loop: Modular Architectures for Autonomous Teaming and Physiological Sensing"
+date: 2026-10-04
+draft: false
+venue: "IEEE SMC 2026, Bellevue WA"
+event_type: "Half-Day Tutorial"
+event_category: "workshop"
+conference_url: "http://www.ieeesmc2026.org"
+description: "Concept-to-implementation tutorial covering the SHaSTA and HAI-SAR open-source platforms, bridging interaction design, physiological sensing (EEG & eye-tracking), and evaluation methodologies for human-centered autonomous systems."
+---
+
+## Overview
+
+This half-day tutorial at the **2026 IEEE International Conference on Systems, Man, and Cybernetics (SMC 2026)** presents a unified, systems-level perspective on closing the human-AI loop — the bidirectional information exchange between autonomous agents and human cognitive states.
+
+The tutorial follows a concept-to-implementation structure combining lectures, architectural walkthroughs, and guided demonstrations built around two open-source research platforms:
+
+- **SHaSTA (Scalable Human-Swarm Teaming Platform)** — A modular framework supporting scalable supervision, reinforcement learning integration, and flexible robot and environment modeling.
+- **HAI-SAR (Human-AI Interaction Platform)** — A search-and-rescue environment designed for adaptive AI communication and granular behavioral/physiological logging.
+
+Topics progress from interaction design principles to system architectures, interface design, physiological sensing (EEG and eye-tracking), and evaluation methodologies, with emphasis on reusable design patterns and experimental rigor.
+
+## Who Should Attend
+
+Researchers and practitioners in **Human-Machine Systems, Cybernetics, and Systems Science** seeking to build rigorous, reproducible, and human-centered autonomous systems. Participants are expected to have basic familiarity with autonomous systems or robotics and working knowledge of Python (OOP). No prior experience with swarm systems, physiological sensing, or human-subject experimentation is required.
+
+## Venue
+
+Hyatt Regency Bellevue, Bellevue, WA, USA

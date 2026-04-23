@@ -1,0 +1,13 @@
+---
+title: "rescue-analysis"
+date: "April 20, 2026"
+draft: false
+image: "cover.png"
+description: "A software project from the iHuman Lab."
+github: "https://github.com/iHuman-Lab/rescue-analysis"
+repo_languages:
+  - "Makefile"
+  - "Python"
+  - "Shell"
+
+---

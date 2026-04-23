@@ -31,6 +31,8 @@ website:
         text: Software
       - href: gallery
         text: Gallery
+      - href: outreach
+        text: Outreach
       - href: contact
         text: Join
       # - href: blogs

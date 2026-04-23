@@ -1,0 +1,70 @@
+<% const validItems = items.filter(i => i.title); %>
+<% const workshops = validItems.filter(i => i.event_category !== 'k12'); %>
+<% const k12items = validItems.filter(i => i.event_category === 'k12'); %>
+<h2 class="outreach-section-heading">Workshops &amp; Tutorials</h2>
+<% if (workshops.length > 0) { %>
+<div class="outreach-grid">
+<% for (const item of workshops) { %>
+<% const rawDate = item.date ? new Date(item.date) : null; %>
+<% const d = (rawDate && rawDate.getFullYear() < 2099) ? rawDate.toLocaleDateString('en-US', {month: 'long', year: 'numeric'}) : 'TBD'; %>
+<div class="outreach-card">
+<a class="outreach-stretched-link" href="<%= item.path %>"></a>
+<% if (item.image) { %>
+<div class="outreach-card-img-wrap"><img src="<%= item.image %>" alt="<%= item.title %>" class="outreach-card-img" /></div>
+<% } %>
+<div class="outreach-card-top">
+<div class="outreach-card-title"><%= item.title %></div>
+</div>
+<div class="outreach-card-body">
+<div class="outreach-card-desc"><%= item.description %></div>
+<div class="outreach-card-meta">
+<span class="outreach-meta-item"><span class="outreach-meta-icon">&#x1F4CD;</span><%= item.venue || 'TBD' %></span>
+<span class="outreach-meta-item"><span class="outreach-meta-icon">&#x1F4C5;</span><%= d %></span>
+</div>
+</div>
+<div class="outreach-card-footer">
+<span class="outreach-badge"><%= item.event_type || 'Event' %></span>
+<% if (item.conference_url) { %>
+<a class="outreach-conf-link" href="<%= item.conference_url %>" target="_blank" rel="noopener" onclick="event.stopPropagation()">Conference site ↗</a>
+<% } %>
+</div>
+</div>
+<% } %>
+</div>
+<% } %>
+<h2 class="outreach-section-heading">K-12 &amp; Public Outreach</h2>
+<% if (k12items.length > 0) { %>
+<div class="outreach-grid">
+<% for (const item of k12items) { %>
+<% const rawDate = item.date ? new Date(item.date) : null; %>
+<% const d = (rawDate && rawDate.getFullYear() < 2099) ? rawDate.toLocaleDateString('en-US', {month: 'long', year: 'numeric'}) : 'TBD'; %>
+<div class="outreach-card">
+<a class="outreach-stretched-link" href="<%= item.path %>"></a>
+<% if (item.image) { %>
+<div class="outreach-card-img-wrap"><img src="<%= item.image %>" alt="<%= item.title %>" class="outreach-card-img" /></div>
+<% } %>
+<div class="outreach-card-top">
+<div class="outreach-card-title"><%= item.title %></div>
+</div>
+<div class="outreach-card-body">
+<div class="outreach-card-desc"><%= item.description %></div>
+<div class="outreach-card-meta">
+<span class="outreach-meta-item"><span class="outreach-meta-icon">&#x1F4CD;</span><%= item.venue || 'TBD' %></span>
+<span class="outreach-meta-item"><span class="outreach-meta-icon">&#x1F4C5;</span><%= d %></span>
+</div>
+</div>
+<div class="outreach-card-footer">
+<span class="outreach-badge outreach-badge-k12"><%= item.event_type || 'Event' %></span>
+<% if (item.conference_url) { %>
+<a class="outreach-conf-link" href="<%= item.conference_url %>" target="_blank" rel="noopener" onclick="event.stopPropagation()">Conference site ↗</a>
+<% } %>
+</div>
+</div>
+<% } %>
+</div>
+<% } else { %>
+<div class="outreach-coming-soon">
+<div class="outreach-coming-icon">🔬</div>
+<div class="outreach-coming-text">Coming soon — we are actively planning K-12 and public engagement activities. Check back for updates!</div>
+</div>
+<% } %>

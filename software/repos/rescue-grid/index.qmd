@@ -1,6 +1,6 @@
 ---
 title: "rescue-grid"
-date: "March 31, 2026"
+date: "April 09, 2026"
 draft: false
 image: "cover.png"
 description: "A high-stakes Search and Rescue (SAR) simulation built on MiniGrid. The primary RL training ground for the iHuman Lab, designed for modular research in human-centric navigation and victim recovery."

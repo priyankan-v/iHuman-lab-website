@@ -1,6 +1,6 @@
 ---
 title: "igaze"
-date: "November 13, 2024"
+date: "April 15, 2026"
 draft: false
 image: "cover.png"
 description: "A python package implementing various features extraction method from eye tracking"

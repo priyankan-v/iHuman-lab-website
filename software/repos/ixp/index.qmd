@@ -1,6 +1,6 @@
 ---
 title: "ixp"
-date: "March 19, 2026"
+date: "April 09, 2026"
 draft: false
 image: "cover.png"
 description: "A python package to run experiments at iHuman Lab"

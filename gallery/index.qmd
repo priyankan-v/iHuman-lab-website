@@ -31,6 +31,12 @@ lightbox: true
   <a href="../images/work/377A0918.jpg" class="gallery-item lightbox" data-gallery="lab-gallery">
     <img src="../images/work/377A0918.jpg" alt="iHuman Lab" loading="lazy" />
   </a>
+  <a href="../images/work/377A0919.jpeg" class="gallery-item lightbox" data-gallery="lab-gallery">
+    <img src="../images/work/377A0919.jpeg" alt="iHuman Lab" loading="lazy" />
+  </a>
+  <a href="../images/work/377A0920.jpeg" class="gallery-item lightbox" data-gallery="lab-gallery">
+    <img src="../images/work/377A0920.jpeg" alt="iHuman Lab" loading="lazy" />
+  </a>
   <!-- GALLERY_END -->
 </div>
 ```

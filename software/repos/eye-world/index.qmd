@@ -1,6 +1,6 @@
 ---
 title: "eye-world"
-date: "March 16, 2026"
+date: "June 20, 2026"
 draft: false
 image: "cover.png"
 description: "Implementation of world models in Atari using eye-tracking"

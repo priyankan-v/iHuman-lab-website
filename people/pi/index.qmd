@@ -31,4 +31,8 @@ University at Buffalo, USA | 2015–2017
 National Institute of Engineering, India | 2010–2014
 
 ## Research Interest
-Safe Learning based Cyber Physical Systems | Brain Machine Interfaces | Human-Robot Interaction | Robotics | Haptics | Telerehabilitation
+- Safe Learning based Cyber Physical Systems
+- Brain Machine Interfaces
+- Human-Robot Interaction
+- Robotics & Haptics
+- Telerehabilitation

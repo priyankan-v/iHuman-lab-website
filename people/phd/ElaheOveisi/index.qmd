@@ -1,26 +1,28 @@
 ---
 title: Elahe Oveisi
 about:
-  template: trestles
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      url: https://www.linkedin.com/in/elaheoveisi
-    - icon: github
-      text: Github
-      url: https://github.com/elaheoveisi
-    - text: "{{< ai google-scholar >}} Google Scholar"
-      url: None
-    - text: Website
-      url: None
+    template: trestles
+    links:
+        - icon: linkedin
+          text: LinkedIn
+          url: https://www.linkedin.com/in/elaheoveisi
+        - icon: github
+          text: Github
+          url: https://github.com/elaheoveisi
+        - text: "{{< ai google-scholar >}} Google Scholar"
+          url: None
+        - text: Website
+          url: None
 image: ./avatar.jpeg
 started: Fall 2024
 ---
 
 ## Education
-Oklahoma State University
-PhD in Aerospace and Mechanical Engineering
 
+**PhD in Aerospace and Mechanical Engineering**
+Oklahoma State University | 2024–present
 
-## Research Interests
-Interested in “Human Machine Interaction,” “Aviation Safety,” and “Human Factors” in Autonomous Systems.
+## Research Interest
+- Human-Machine Interaction
+- Aviation Safety
+- Human Factors in Autonomous Systems

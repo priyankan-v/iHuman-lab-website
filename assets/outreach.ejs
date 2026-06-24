@@ -8,7 +8,7 @@
 <% const rawDate = item.date ? new Date(item.date) : null; %>
 <% const d = (rawDate && rawDate.getFullYear() < 2099) ? rawDate.toLocaleDateString('en-US', {month: 'long', year: 'numeric'}) : 'TBD'; %>
 <div class="outreach-card">
-<a class="outreach-stretched-link" href="<%= item.path %>"></a>
+<a class="outreach-stretched-link" href="<%= item.path %>" target="_blank" rel="noopener"></a>
 <% if (item.image) { %>
 <div class="outreach-card-img-wrap"><img src="<%= item.image %>" alt="<%= item.title %>" class="outreach-card-img" /></div>
 <% } %>
@@ -39,7 +39,7 @@
 <% const rawDate = item.date ? new Date(item.date) : null; %>
 <% const d = (rawDate && rawDate.getFullYear() < 2099) ? rawDate.toLocaleDateString('en-US', {month: 'long', year: 'numeric'}) : 'TBD'; %>
 <div class="outreach-card">
-<a class="outreach-stretched-link" href="<%= item.path %>"></a>
+<a class="outreach-stretched-link" href="<%= item.path %>" target="_blank" rel="noopener"></a>
 <% if (item.image) { %>
 <div class="outreach-card-img-wrap"><img src="<%= item.image %>" alt="<%= item.title %>" class="outreach-card-img" /></div>
 <% } %>

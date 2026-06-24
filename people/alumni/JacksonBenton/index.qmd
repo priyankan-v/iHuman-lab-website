@@ -19,11 +19,11 @@ ended: Fall 2025
 ---
 
 ## Education
-Oklahoma State University
-B.S. in Aerospace and Mechanical Engineering
-August 2021 - May 2026
+
+**B.S. in Aerospace and Mechanical Engineering**
+Oklahoma State University | 2021–2026
 
 ## Research Interest
-Interested in aerodynamics, propulsion systems, and thermodynamics, with a focus on improving
-aerospace and mechanical systems. Also exploring AI and machine learning for autonomous systems.
-
+- Aerodynamics and propulsion systems
+- Thermodynamics and mechanical systems
+- AI and machine learning for autonomous systems

@@ -30,6 +30,13 @@ def replace_between(text, start_marker, end_marker, replacement):
     return pattern.sub(rf"\1\n{replacement}\2", text)
 
 
+def write_if_changed(path, new_text):
+    if path.read_text() != new_text:
+        path.write_text(new_text)
+        return True
+    return False
+
+
 def update_gallery(images):
     path = ROOT / "gallery" / "index.qmd"
     lines = []
@@ -42,8 +49,8 @@ def update_gallery(images):
         )
     replacement = "\n".join(lines)
     text = replace_between(path.read_text(), "<!-- GALLERY_START -->", "<!-- GALLERY_END -->", replacement)
-    path.write_text(text)
-    print(f"  Gallery updated — {len(images)} photos")
+    changed = write_if_changed(path, text)
+    print(f"  Gallery updated — {len(images)} photos" if changed else f"  Gallery unchanged — {len(images)} photos")
 
 
 def update_slideshow(images):
@@ -56,18 +63,22 @@ def update_slideshow(images):
     replacement = f"[{filenames}]"
 
     text = replace_between(path.read_text(), "/* SLIDESHOW_START */", "/* SLIDESHOW_END */", replacement)
-    path.write_text(text)
+    changed = write_if_changed(path, text)
 
     # Update animation duration in custom.scss
     scss_path = ROOT / "custom.scss"
     scss = scss_path.read_text()
-    scss = re.sub(
+    new_scss = re.sub(
         r"(animation: slideshow-fade )\d+s( infinite)",
         rf"\g<1>{cycle}s\2",
         scss,
     )
-    scss_path.write_text(scss)
-    print(f"  Slideshow updated — {total} photos, {cycle}s cycle")
+    scss_changed = write_if_changed(scss_path, new_scss)
+
+    if changed or scss_changed:
+        print(f"  Slideshow updated — {total} photos, {cycle}s cycle")
+    else:
+        print(f"  Slideshow unchanged — {total} photos, {cycle}s cycle")
 
 
 def main():

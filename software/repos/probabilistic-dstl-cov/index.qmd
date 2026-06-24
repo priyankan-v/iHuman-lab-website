@@ -1,0 +1,13 @@
+---
+title: "probabilistic-dstl-cov"
+date: "June 21, 2026"
+draft: false
+image: "cover.png"
+description: "A software project from the iHuman Lab."
+github: "https://github.com/iHuman-Lab/probabilistic-dstl-cov"
+repo_languages:
+  - "Python"
+  - "Makefile"
+  - "Shell"
+
+---

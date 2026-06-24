@@ -19,7 +19,11 @@ ended: Fall 2025
 ---
 
 ## Education
-B.S in Computer and Electrical Engineering | Oklahoma State University, Stillwater, OK | 2024-2027
+
+**B.S. in Computer and Electrical Engineering**
+Oklahoma State University, Stillwater OK | 2024–2027
 
 ## Research Interest
-Deep Learning | Human-Robot Interactions | Digital Circuit and System Design
+- Deep Learning
+- Human-Robot Interaction
+- Digital Circuit and System Design

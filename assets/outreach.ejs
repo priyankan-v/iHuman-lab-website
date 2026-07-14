@@ -1,4 +1,5 @@
 <% const validItems = items.filter(i => i.title); %>
+<% const plainTitle = (t) => (t || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(); %>
 <% const workshops = validItems.filter(i => i.event_category !== 'k12'); %>
 <% const k12items = validItems.filter(i => i.event_category === 'k12'); %>
 <h2 class="outreach-section-heading">Workshops &amp; Tutorials</h2>
@@ -8,10 +9,7 @@
 <% const rawDate = item.date ? new Date(item.date) : null; %>
 <% const d = (rawDate && rawDate.getFullYear() < 2099) ? rawDate.toLocaleDateString('en-US', {month: 'long', year: 'numeric'}) : 'TBD'; %>
 <div class="outreach-card">
-<a class="outreach-stretched-link" href="<%= item.path %>" target="_blank" rel="noopener"></a>
-<% if (item.image) { %>
-<div class="outreach-card-img-wrap"><img src="<%= item.image %>" alt="<%= item.title %>" class="outreach-card-img" /></div>
-<% } %>
+<a class="outreach-stretched-link" href="<%= item.path %>" target="_blank" rel="noopener"></a><% if (item.image) { %><div class="outreach-card-img-wrap"><img src="<%= item.image %>" alt="<%= plainTitle(item.title) %>" class="outreach-card-img" /></div><% } %>
 <div class="outreach-card-top">
 <div class="outreach-card-title"><%= item.title %></div>
 </div>
@@ -23,10 +21,7 @@
 </div>
 </div>
 <div class="outreach-card-footer">
-<span class="outreach-badge"><%= item.event_type || 'Event' %></span>
-<% if (item.conference_url) { %>
-<a class="outreach-conf-link" href="<%= item.conference_url %>" target="_blank" rel="noopener" onclick="event.stopPropagation()">Conference site ↗</a>
-<% } %>
+<span class="outreach-badge"><%= item.event_type || 'Event' %></span><% if (item.conference_url) { %><a class="outreach-conf-link" href="<%= item.conference_url %>" target="_blank" rel="noopener" onclick="event.stopPropagation()">Conference site ↗</a><% } %>
 </div>
 </div>
 <% } %>
@@ -39,10 +34,7 @@
 <% const rawDate = item.date ? new Date(item.date) : null; %>
 <% const d = (rawDate && rawDate.getFullYear() < 2099) ? rawDate.toLocaleDateString('en-US', {month: 'long', year: 'numeric'}) : 'TBD'; %>
 <div class="outreach-card">
-<a class="outreach-stretched-link" href="<%= item.path %>" target="_blank" rel="noopener"></a>
-<% if (item.image) { %>
-<div class="outreach-card-img-wrap"><img src="<%= item.image %>" alt="<%= item.title %>" class="outreach-card-img" /></div>
-<% } %>
+<a class="outreach-stretched-link" href="<%= item.path %>" target="_blank" rel="noopener"></a><% if (item.image) { %><div class="outreach-card-img-wrap"><img src="<%= item.image %>" alt="<%= plainTitle(item.title) %>" class="outreach-card-img" /></div><% } %>
 <div class="outreach-card-top">
 <div class="outreach-card-title"><%= item.title %></div>
 </div>
@@ -54,10 +46,7 @@
 </div>
 </div>
 <div class="outreach-card-footer">
-<span class="outreach-badge outreach-badge-k12"><%= item.event_type || 'Event' %></span>
-<% if (item.conference_url) { %>
-<a class="outreach-conf-link" href="<%= item.conference_url %>" target="_blank" rel="noopener" onclick="event.stopPropagation()">Conference site ↗</a>
-<% } %>
+<span class="outreach-badge outreach-badge-k12"><%= item.event_type || 'Event' %></span><% if (item.conference_url) { %><a class="outreach-conf-link" href="<%= item.conference_url %>" target="_blank" rel="noopener" onclick="event.stopPropagation()">Conference site ↗</a><% } %>
 </div>
 </div>
 <% } %>

@@ -1,7 +1,7 @@
 ---
 listing:
   contents:
-    - ./
+    - "*/index.qmd"
   template: ../assets/outreach.ejs
   fields: [title, description, date, venue, event_type, event_category, conference_url, image, path]
   sort: "date desc"

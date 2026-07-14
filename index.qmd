@@ -46,12 +46,12 @@ page-layout: full
 <div id="home-slideshow" class="home-about-photos"></div>
 <script>
 /* SLIDESHOW_START */
-["377A0851.jpg", "377A0883.jpg", "377A0891.jpg", "377A0907.jpg", "377A0918.jpg", "377A0919.jpeg", "377A0920.jpeg"]
+["images/work/377A0851.jpg", "images/work/377A0883.jpg", "images/work/377A0891.jpg", "images/work/377A0907.jpg", "images/work/377A0918.jpg", "images/work/377A0919.jpeg", "images/work/377A0920.jpeg", "images/outreach/377A7060.jpg", "images/outreach/377A7095.jpg", "images/outreach/377A7106.jpg", "images/outreach/377A7321.jpg"]
 /* SLIDESHOW_END */
 .forEach(function(f, i) {
   var img = document.createElement("img");
   img.className = "slideshow-img";
-  img.src = "images/work/" + f;
+  img.src = f;
   img.alt = "iHuman Lab";
   img.style.animationDelay = (i * 4) + "s";
   document.getElementById("home-slideshow").appendChild(img);

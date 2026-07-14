@@ -1,0 +1,51 @@
+---
+title: "LLM-Mediated Human–AI Interaction in Search and Rescue: Impact of Expertise on Attentional Allocation"
+date: "2026-06-25"
+draft: false
+categories:
+  - human-robot-interaction
+  - eye-tracking
+  - large-language-models
+  - search-and-rescue
+image: 'cover.jpg'
+links:
+  - icon: file-earmark-pdf
+    text: arXiv Preprint
+    url: "https://arxiv.org/pdf/2606.19514"
+---
+
+![](cover.jpg){fig-align="center"}
+
+## Abstract
+
+Human-AI teaming (HAT) increasingly involves AI systems that provide real-time, context-aware guidance in complex tasks. While such systems can improve performance, their effectiveness depends on how they shape human cognition and behavior. In particular, AI assistance can introduce cognitive demands and influence attention, planning, and interaction with the task environment, with effects that can vary across levels of expertise.
+
+This work investigates these mechanisms in a simulated search and rescue (SAR) environment. We compare human performance under two LLM (Large Language Model)-guided conditions and a no-LLM baseline, and analyze interaction at multiple levels, including task performance, eye-tracking measures, and planning behavior.
+
+Results indicate that LLM guidance enhanced task efficiency (higher rewards and victims-per-step) but did not increase total victims saved. Eye-tracking data revealed an **attention-guidance trade-off**, with visual resources shifting to the chat interface alongside increased pupil size variability. Expertise moderated this effect: novices exhibited passive AI reliance, whereas experts maintained a **"verification loop"** through persistent environmental scanning.
+
+These findings suggest that LLM-mediated teaming efficacy depends on the operator's ability to cross-reference AI guidance with ground truth to maintain situational awareness.
+
+## Key Findings
+
+- LLM guidance significantly improved **task efficiency** (victims-per-step, total rewards) but not total victims rescued
+- Participants allocated **more visual attention to the chat interface** and less to the task environment under LLM support
+- **Increased pupil size variability** under LLM conditions indicates elevated cognitive load during guidance integration
+- **Experts** maintained a dual-attention strategy — monitoring both the environment and AI guidance (verification loop)
+- **Novices** relied more heavily on the LLM, reducing situational awareness
+
+## Methods
+
+- **Task**: Grid-based, partially observable search-and-rescue (SAR) environment built on MiniGrid
+- **Conditions**: Two LLM-guided conditions + one no-LLM baseline (within-subjects, 15 min/trial)
+- **Eye Tracking**: Tobii system — fixation count, fixation duration, saccade amplitude, AOI dwell time, pupil diameter STD
+- **Individual Differences**: Multiple Object Tracking (MOT) + Visual Search (VS) tasks; K-means clustering into Expert/Novice groups
+- **Analysis**: Linear mixed-effects models with Benjamini–Hochberg FDR correction
+- **Participants**: 13 participants, Oklahoma State University (IRB-26-40-STW)
+
+## Publication
+
+**Elahe Oveisi** and **Hemanth Manjunatha**
+
+*IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2026*
+

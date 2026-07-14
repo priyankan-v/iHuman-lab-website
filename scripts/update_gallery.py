@@ -11,15 +11,17 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
-WORK_DIR = ROOT / "images" / "work"
+SOURCE_DIRS = [ROOT / "images" / "work", ROOT / "images" / "outreach"]
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 
 
 def find_images():
-    return sorted(
-        p for p in WORK_DIR.iterdir()
+    images = [
+        p for d in SOURCE_DIRS if d.is_dir()
+        for p in d.iterdir()
         if p.suffix.lower() in IMAGE_EXTS
-    )
+    ]
+    return sorted(images, key=lambda p: p.name)
 
 
 def replace_between(text, start_marker, end_marker, replacement):
@@ -41,7 +43,7 @@ def update_gallery(images):
     path = ROOT / "gallery" / "index.qmd"
     lines = []
     for img in images:
-        rel = f"../images/work/{img.name}"
+        rel = f"../images/{img.parent.name}/{img.name}"
         lines.append(
             f'  <a href="{rel}" class="gallery-item lightbox" data-gallery="lab-gallery">\n'
             f'    <img src="{rel}" alt="iHuman Lab" loading="lazy" />\n'
@@ -59,8 +61,8 @@ def update_slideshow(images):
     interval = 4  # seconds per photo
     cycle = total * interval
 
-    filenames = ", ".join(f'"{img.name}"' for img in images)
-    replacement = f"[{filenames}]"
+    paths = ", ".join(f'"images/{img.parent.name}/{img.name}"' for img in images)
+    replacement = f"[{paths}]"
 
     text = replace_between(path.read_text(), "/* SLIDESHOW_START */", "/* SLIDESHOW_END */", replacement)
     changed = write_if_changed(path, text)
@@ -84,9 +86,9 @@ def update_slideshow(images):
 def main():
     images = find_images()
     if not images:
-        print("No images found in images/work/ — skipping gallery update.")
+        print("No images found in images/work/ or images/outreach/ — skipping gallery update.")
         return
-    print(f"Found {len(images)} images in images/work/")
+    print(f"Found {len(images)} images across {', '.join(d.name for d in SOURCE_DIRS)}")
     update_gallery(images)
     update_slideshow(images)
     print("Done.")

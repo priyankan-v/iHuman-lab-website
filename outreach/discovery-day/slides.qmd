@@ -1,0 +1,274 @@
+---
+title: "CEAT Discovery Day<br>iHuman [Lab]{.accent}"
+subtitle: "Where Humans and Machines Learn to Work Together"
+institute: "Oklahoma State University"
+date: "2026-06-01"
+description: "An introduction to the iHuman Lab for K–12 students covering brain-computer interfaces, human-robot interaction, eye-gaze AI, and how to pursue a career in research."
+image: /images/work/377A0883.jpg
+venue: "Oklahoma State University, Stillwater OK"
+event_type: "Discovery Day"
+event_category: "k12"
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    slide-number: false
+    transition: fade
+    background-transition: fade
+    logo: ../../images/logos/logo.png
+    footer: "iHuman Lab · Oklahoma State University"
+    width: 1280
+    height: 720
+    margin: 0.1
+    navigation-mode: linear
+    controls: true
+    progress: true
+    include-in-header:
+      text: |
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var titleSlide = document.getElementById("title-slide");
+          if (!titleSlide) return;
+          var row = document.createElement("div");
+          row.style.cssText = "display:flex; gap:2rem; align-items:center; margin-top:2.5rem;";
+          var people = [
+            { src: "../../people/pi/avatar.jpg",                name: "Hemanth Manjunatha", role: "Principal Investigator" },
+            { src: "../../people/phd/ElaheOveisi/avatar.jpeg",  name: "Elahe Oveisi",       role: "PhD Student" },
+            { src: "../../people/phd/Bennett_Dogbey/avatar.jpg", name: "Bennett Dogbey",    role: "PhD Student" }
+          ];
+          people.forEach(function(p) {
+            var card = document.createElement("div");
+            card.style.cssText = "display:flex; align-items:center; gap:0.9rem;";
+            var img = document.createElement("img");
+            img.src = p.src;
+            img.alt = p.name;
+            img.style.cssText = "width:130px; height:130px; border-radius:50%; object-fit:cover; border:3px solid #EC672C; box-shadow:0 2px 8px rgba(0,0,0,0.4);";
+            var info = document.createElement("div");
+            info.innerHTML = '<div style="font-weight:700; font-size:1.3rem; color:#fff; line-height:1.3;">' + p.name + '</div>' +
+                             '<div style="font-size:1.1rem; color:rgba(255,255,255,0.5); margin-top:0.2rem;">' + p.role + '</div>';
+            card.appendChild(img);
+            card.appendChild(info);
+            row.appendChild(card);
+          });
+          titleSlide.appendChild(row);
+        });
+        </script>
+title-slide-attributes:
+  data-background-image: ../../images/campus/campus.jpg
+  data-background-opacity: "0.3"
+  data-background-color: "#252525"
+---
+
+## Who Are [We]{.accent}? {background-color="#252525"}
+
+::: {.columns}
+::: {.column width="55%"}
+
+::: {.hook}
+We build technology that understands [you]{.accent}.
+:::
+
+Not just your commands —
+your **attention**, your **stress**, even your **mistakes** *before they happen*.
+
+::: {.punchline}
+[Brain]{.accent} · [AI]{.accent} · [Robotics]{.accent} — working together.
+:::
+
+<div style="display:grid; grid-template-columns:repeat(2,1fr); gap:1rem 2rem; margin-top:1.2rem;">
+<div style="border-left:3px solid #EC672C; padding-left:0.8rem;">
+<div style="font-size:2.2rem; font-weight:900; color:#EC672C; line-height:1;">10+</div>
+<div style="font-size:0.85rem; color:rgba(255,255,255,0.55); text-transform:uppercase; letter-spacing:1.5px; margin-top:0.2rem;">Researchers</div>
+</div>
+<div style="border-left:3px solid #EC672C; padding-left:0.8rem;">
+<div style="font-size:2.2rem; font-weight:900; color:#EC672C; line-height:1;">30+</div>
+<div style="font-size:0.85rem; color:rgba(255,255,255,0.55); text-transform:uppercase; letter-spacing:1.5px; margin-top:0.2rem;">Publications</div>
+</div>
+<div style="border-left:3px solid #EC672C; padding-left:0.8rem;">
+<div style="font-size:2.2rem; font-weight:900; color:#EC672C; line-height:1;">4</div>
+<div style="font-size:0.85rem; color:rgba(255,255,255,0.55); text-transform:uppercase; letter-spacing:1.5px; margin-top:0.2rem;">Research Areas</div>
+</div>
+<div style="border-left:3px solid #EC672C; padding-left:0.8rem;">
+<div style="font-size:2.2rem; font-weight:900; color:#EC672C; line-height:1;">6+</div>
+<div style="font-size:0.85rem; color:rgba(255,255,255,0.55); text-transform:uppercase; letter-spacing:1.5px; margin-top:0.2rem;">Active Projects</div>
+</div>
+</div>
+
+:::
+::: {.column width="45%"}
+![](../../images/work/377A0918.jpg)
+:::
+:::
+
+---
+
+## What If a Robot Could Read Your [Mind]{.accent}? {background-color="#252525"}
+
+::: {.columns}
+::: {.column width="50%"}
+
+::: {.hook}
+A headset — but instead of music, it reads your [brainwaves]{.accent}.
+:::
+
+- *Stressed?* → Robot **slows down**.
+- *Overwhelmed?* → Robot **takes over**.
+- *Zoning out?* → Robot **asks for attention**.
+
+::: {.punchline}
+The robot adapts to [you]{.accent}. Not the other way around.
+:::
+
+:::
+::: {.column width="50%"}
+![](../../images/work/377A0907.jpg)
+:::
+:::
+
+---
+
+## What Do Your Eyes [Reveal]{.accent}? {background-color="#252525"}
+
+::: {.columns}
+::: {.column width="50%"}
+
+::: {.hook}
+In [200 milliseconds]{.accent}, your eyes reveal exactly what you're thinking.
+:::
+
+Experts see *differently* — a **surgeon's gaze**, a **pilot's scan**, a **drone operator's** focus.
+
+We recorded those eye movements and trained AI to *copy them exactly*.
+
+::: {.punchline}
+Now the AI [sees]{.accent} like the best human in the room.
+:::
+
+:::
+::: {.column width="50%"}
+![](../../images/work/377A0891.jpg)
+:::
+:::
+
+---
+
+## Could You Control [50 Drones]{.accent} at Once? {background-color="#252525"}
+
+::: {.columns}
+::: {.column width="50%"}
+
+::: {.hook}
+Disaster strikes. [One person]{.accent}. 50 drones. No room for error.
+:::
+
+What happens to your **brain** under that pressure?
+
+We track brain signals *in real time* to find out — and build AI that steps in **before you hit your limit**.
+
+::: {.punchline}
+Because in a rescue mission, [hesitation]{.accent} *costs lives*.
+:::
+
+:::
+::: {.column width="50%"}
+![](../../images/work/377A0919.jpeg)
+:::
+:::
+
+---
+
+## Could You Control a Robot on the [Moon]{.accent}? {background-color="#252525"}
+
+::: {.columns}
+::: {.column width="50%"}
+
+::: {.hook}
+Your signal takes [1.3 seconds]{.accent} to reach the Moon.
+:::
+
+That's **1.3 seconds** your robot is *completely on its own*.
+
+We build robots smart enough to **survive that gap** — and study how humans stay in control when the stakes are *this high*.
+
+::: {.punchline}
+You on Earth. Robot on the Moon. [One team.]{.accent}
+:::
+
+:::
+::: {.column width="50%"}
+![](../../images/work/377A0920.jpeg)
+:::
+:::
+
+---
+
+## Real [Impact]{.accent} {background-color="#252525"}
+
+<div class="impact-grid">
+
+<div class="impact-card">
+<img src="https://images.unsplash.com/photo-1692176961746-e3b5aeb9669a?w=1200&h=900&fit=crop&auto=format&q=90">
+<div class="impact-overlay"></div>
+<div class="impact-text">
+<div class="impact-label">Search & Rescue</div>
+<div class="impact-desc">Find survivors faster when every second counts</div>
+</div>
+</div>
+
+<div class="impact-card">
+<img src="https://images.unsplash.com/photo-1647427060118-4911c9821b82?w=1200&h=900&fit=crop&auto=format&q=90">
+<div class="impact-overlay"></div>
+<div class="impact-text">
+<div class="impact-label">Manufacturing</div>
+<div class="impact-desc">Robots that work with you, not instead of you</div>
+</div>
+</div>
+
+<div class="impact-card">
+<img src="https://images.unsplash.com/photo-1552773346-ca6976a5d4ca?w=1200&h=900&fit=crop&auto=format&q=90">
+<div class="impact-overlay"></div>
+<div class="impact-text">
+<div class="impact-label">Aviation Safety</div>
+<div class="impact-desc">AI that learns from decades of accident reports</div>
+</div>
+</div>
+
+<div class="impact-card">
+<img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=900&fit=crop&auto=format&q=90">
+<div class="impact-overlay"></div>
+<div class="impact-text">
+<div class="impact-label">Healthcare</div>
+<div class="impact-desc">Tech that adapts to patients, not the other way around</div>
+</div>
+</div>
+
+</div>
+
+<div class="impact-tagline">
+<span class="impact-tagline-phrase">Smarter <span>Machines</span></span><span class="impact-tagline-dot">·</span><span class="impact-tagline-phrase">Safer <span>Humans</span></span><span class="impact-tagline-dot">·</span><span class="impact-tagline-phrase">Better <span>World</span></span>
+</div>
+
+---
+
+## {background-image="../../images/campus/campus_2.jpg" background-opacity="0.25" background-color="#252525"}
+
+::: {style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:80vh; text-align:center;"}
+
+![](../../images/logos/logo.png){style="max-height:110px; border-radius:0 !important; box-shadow:none !important;"}
+
+::: {style="font-family:'Rubik',sans-serif; font-size:2.8rem; font-weight:900; color:#ffffff; margin-top:0.8rem;"}
+This Could Be [You]{style="color:#EC672C;"}
+:::
+
+::: {style="font-size:1.75rem; color:rgba(255,255,255,0.65); margin-top:0.5rem; max-width:700px; line-height:1.6;"}
+Every researcher in this lab was once sitting where you are. If any of this sparked something — **come talk to us**.
+:::
+
+::: {style="font-size:1.5rem; color:#EC672C; margin-top:1.2rem; font-weight:700;"}
+Questions?
+:::
+
+::: {style="font-size:1.5rem; color:rgba(255,255,255,0.35); margin-top:1rem; letter-spacing:2px;"}
+hemanth.manjunatha@okstate.edu
+:::
+
+:::

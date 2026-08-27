@@ -1,0 +1,31 @@
+---
+title: Priyankan Vettivel
+about:
+    template: trestles
+    links:
+        - icon: linkedin
+          text: LinkedIn
+          url: https://www.linkedin.com/in/priyankan-vettivel/
+        - icon: github
+          text: Github
+          url: https://github.com/priyankan-v/
+        - text: "{{< ai google-scholar >}} Google Scholar"
+          url: None
+        - text: Website
+          url: None
+image: ./avatar.jpg
+started: Fall 2026
+---
+
+## Education
+
+**MSc in Mechanical & Aerospace Engineering** *(in progress)*
+Oklahoma State University, Oklahoma | August 2026 – present
+
+**BSc(Hons) in Electronic and Telecommunication Engineering**
+University of Moratuwa, Sri Lanka | March 2022 – June 2026
+
+## Research Interest
+- Learning based methods
+- Human-in-the-loop Intelligent Systems
+- Reinforcement Learning
